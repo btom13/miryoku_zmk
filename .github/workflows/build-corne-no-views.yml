@@ -1,4 +1,4 @@
-name: 'Build corne nice_nano display'
+name: 'Build corne'
 on:
   - workflow_dispatch
   - push
