@@ -5,13 +5,13 @@
 
 #define XXX &none
 
-#define MIRYOKU_LAYER_MACRO \
+#define MIRYOKU_LAYER_MAC \
      XXX, XXX, XXX, XXX, XXX,      XXX, XXX, XXX, XXX, XXX, \
      XXX, XXX, XXX, &kp A, XXX,      XXX, XXX, XXX, XXX, XXX, \
      XXX, XXX, XXX, XXX, XXX,      XXX, XXX, XXX, XXX, XXX, \
      XXX, XXX, XXX, XXX, XXX,      XXX, XXX, XXX, XXX, XXX
 
-#define MIRYOKU_LAYERMAPPING_MACRO MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_MAC MIRYOKU_MAPPING
 
 #define MIRYOKU_LAYER_LIST \
 MIRYOKU_X(BASE,   "Base") \
@@ -24,7 +24,7 @@ MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
-MIRYOKU_X(MACRO,  "Macro")
+MIRYOKU_X(MAC,  "Macro")
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -36,7 +36,7 @@ MIRYOKU_X(MACRO,  "Macro")
 #define U_NUM    7
 #define U_SYM    8
 #define U_FUN    9
-#define U_MACRO  10
+#define U_MAC  10
 
 #define MIRYOKU_LAYERMAPPING_BASE( \
      K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
@@ -44,7 +44,7 @@ MIRYOKU_X(MACRO,  "Macro")
      K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
      N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
-&kp GRAVE  K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  U_LT(U_MACRO, DEL) \
+&kp GRAVE  K00  K01  K02  K03  K04       K05  K06  K07  K08  K09  U_LT(U_MAC, DEL) \
 &kp ESC  K10  K11  K12  K13  U_MT(LG(LA(LC(LSHFT))), G)       U_MT(LG(LA(LC(LSHFT))), M)  K16  K17  K18  K19  &kp QMARK \
 XXX  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &kp LC(B) \
                K32  U_LT(U_NAV, BSPC)  K34       K35  U_LT(U_NUM, SPACE)  K37
