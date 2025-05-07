@@ -1,5 +1,7 @@
 name: 'Build corne nice_nano display'
-on: workflow_dispatch
+on:
+  - workflow_dispatch
+  - push
 jobs:
   build:
     uses: ./.github/workflows/main.yml
